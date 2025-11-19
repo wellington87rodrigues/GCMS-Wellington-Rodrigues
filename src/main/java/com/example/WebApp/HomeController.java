@@ -19,7 +19,7 @@ public class HomeController {
 	
 	@RequestMapping("/wellington")
 	public @ResponseBody String greetingWell() {
-		return "Oi, Meu Nome é Wellington Rodrigues!!!";
+		return "Oi, Meu Nome é Wellington Rodrigues...";
 	}
 
 }
