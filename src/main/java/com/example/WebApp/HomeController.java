@@ -11,15 +11,15 @@ public class HomeController {
 	public @ResponseBody String gretting() {
 		return "Hello, World";
 	}
-	
-	@RequestMapping("/leto")
-	public @ResponseBody String greetingLeto() {
-		return "Hello, Leto!";
-	}
-	
+		
 	@RequestMapping("/wellington")
-	public @ResponseBody String greetingWell() {
-		return "Oi, Meu Nome é Wellington Rodrigues...";
+	public @ResponseBody String greetingWellington() {
+		return "Hello, Wellington";
+	}
+
+	@RequestMapping("/hotfix")
+	public @ResponseBody String greetingHotfix() {
+		return "Hello, Hotfix";
 	}
 
 }
