@@ -25,9 +25,15 @@ class WebAppApplicationTests {
 	}
 	
 	@Test
-	public void shouldReturnMessage() throws Exception {
-		this.mockMvc.perform(get("/leto")).andDo(print()).andExpect(status().isOk())
-				.andExpect(content().string(containsString("Hello, LeTo!")));
+	public void shouldReturnWellingtonMessage() throws Exception {
+		this.mockMvc.perform(get("/wellington")).andDo(print()).andExpect(status().isOk())
+				.andExpect(content().string(containsString("Hello, Wellington")));
 	}
-	
+
+	@Test
+  	public void shouldReturnHotfixMessage() throws Exception {
+		this.mockMvc.perform(get("/hotfix")).andDo(print()).andExpect(status().isOk())
+        	.andExpect(content().string(containsString("Hello, Hotfix")));
+  	}
+
 }
